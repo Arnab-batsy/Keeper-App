@@ -33,7 +33,6 @@ function App() {
           deleteFn={removeNote}
         />
       ))}
-
       <Footer />
     </div>
   );

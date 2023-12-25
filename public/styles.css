@@ -9,6 +9,7 @@
   body {
     background: #eee;
     padding: 0 16px;
+    background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
   }
   
   header {
@@ -26,11 +27,13 @@
   }
   
   footer {
-    position: absolute;
+    position: fixed;
+    bottom: 10px;
     text-align: center;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+    margin-top: 10px;
   }
   
   footer p {
