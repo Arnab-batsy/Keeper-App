@@ -11,17 +11,22 @@ function App() {
   function clickHandle(note) {
     addCard([
       ...card,
-      { key: (card.length) +1 , title: note.title, content: note.content },
+      { key: (card.length) +1 , id:(card.length) +1,  title: note.title, content: note.content },
     ]);
     console.log(card);
+  }
+  function removeNote(id){
+    addCard(card.filter((item, index) => {
+        return index !== id;
+      }));
   }
 
   return (
     <div>
       <Header />
       <CreateArea setClick={clickHandle} />
-      {card.map((ob) => (
-        <Note key={ob.key} title={ob.title} content={ob.content} />
+      {card.map((ob,index) => (
+        <Note key={index} id={index} title={ob.title} content={ob.content} deleteFn={removeNote} />
       ))}
 
       <Footer />

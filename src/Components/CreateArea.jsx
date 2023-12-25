@@ -39,7 +39,7 @@ function CreateArea(props) {
           rows="3"
           value={note.content}
         />
-        <button type="submit">Add</button>
+        <button style= {{fontSize: "25px"}} type="submit">+</button>
       </form>
     </div>
   );
