@@ -16,7 +16,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form
+      <form className="create-note"
         onSubmit={(event) => {
           props.setClick(note);
           event.preventDefault();
